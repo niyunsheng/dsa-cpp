@@ -18,6 +18,9 @@ template <typename T> void quickSelect ( Vector<T> & A, Rank k ) { //基于快�
       A[i] = pivot;
       if ( k <= i ) hi = i - 1;
       if ( i <= k ) lo = i + 1;
-      /*DSA*/print ( A ); for ( int i = 0; i < lo; i++ ) printf ( "     " ); for ( int i = lo; i <= hi; i++ ) printf ( "-----" ); printf ( "\n" );
+      /*DSA*/print ( A ); 
+      for ( int i = 0; i < lo; i++ ) printf ( "     " ); 
+      for ( int i = lo; i <= hi; i++ ) printf ( "-----" ); 
+      printf ( "\n" );
    } //A[k] is now a pivot
 }
